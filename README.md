@@ -7,7 +7,7 @@ node index.js
 
 Luego se imprimirá en consola el siguiente mensaje: 
 
-Servidor escuchando en 3000
-Me conecté a la base de datos
+Servidor escuchando en  3000
+Connected successfully to server
 
 Luego es necesario abrir la colección de pruebas de postman, la cual se encuentra en la carpeta POSTMAN que se encuentra en el directorio de la aplicación.

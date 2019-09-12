@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "99cbd264-d923-49a4-9353-8cd6efa82703",
+		"name": "WEB mongoDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST pais",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"country\":\"Genovia\",\n\t\"population\":9923, \n\t\"continent\":\"Europa\", \n\t\"lifeExpectancy\":43.8, \n\t\"purchasingPower\":974.58\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/paises",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"paises"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all paises",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/paises",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"paises"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get one pais",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/paises/Genovia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"paises",
+						"Genovia"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update pais",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"country\":\"Colombia\",\n\t\"population\":9923, \n\t\"continent\":\"América\", \n\t\"lifeExpectancy\":43.8, \n\t\"purchasingPower\":974.58\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/paises/Genovia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"paises",
+						"Genovia"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete pais",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/paises/Colombia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"paises",
+						"Colombia"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
